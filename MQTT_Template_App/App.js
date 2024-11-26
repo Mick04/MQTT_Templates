@@ -37,6 +37,7 @@ const TemperatureGraph = () => {
 
     // Initialize the MQTT service
     const mqtt = new MqttService(onMessageArrived);
+    
     mqtt.connect("Tortoise", "Hea1951Ter", {
       onSuccess: () => {
         console.log("TemperatureGraph Connected to MQTT broker");
