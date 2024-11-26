@@ -88,20 +88,21 @@ const App = () => {
           width={500}
           hight={500}
           initialSpacing={0}
-          xAxisLabelTextStyle={{ color: "red", fontSize: 19 }}
+          xAxisLabelTextStyle={{ color: "green", fontSize: 19 }}
           yAxisLabelTextStyle={{ color: "red", fontSize: 22 }}
           // yAxisInterval={10}
-          dataPointsColor={"red"}
-          dataPointsRadius={4}
+          //dataPointsColor={"blue"}
+          dataPointsRadius={3}
           textShiftY={-20} // Move data points up by 10 units={20}
           hideYAxisText
           spacing={94}
           textFontSize={26} // font size of the text on the data points
           textColor1="red"
-          padding={50}
+          //padding={50}
           yAxisMinValue={-10} // Ensure y-axis starts from =10
           yAxisMaxValue={40} // Ensure y-axis ends at 30
           scrollToEnd={true} // Scroll to the end to show the last entry
+          curved={true} // Make the line points curved
           // showVerticalLines={true} // Show vertical lines
           // verticalLinesColor="gray" // Color of the vertical lines
           // verticalLinesThickness={2} // Thickness of the vertical lines
@@ -116,8 +117,8 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 80,
-    paddingTop: 50,
+    marginTop: 20,
+    paddingTop: 20,
     backgroundColor: "#fff",
   },
   chartContainer: {
